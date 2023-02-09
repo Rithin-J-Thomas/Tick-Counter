@@ -1,0 +1,30 @@
+.box{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 7% 35%;
+    background-image: url(https://images.pexels.com/photos/1291515/pexels-photo-1291515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: -100px -100px;
+}
+
+.heading{
+    text-align: center;
+    color: rgb(218, 0, 0);
+}
+
+.keys{
+    margin-left: 135px;
+}
+
+.save{
+    width: 230px;
+}
+
+#total_numb{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 100px;
+}
+
