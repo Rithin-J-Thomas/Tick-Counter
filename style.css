@@ -7,7 +7,7 @@
     background-image: url(https://images.pexels.com/photos/1291515/pexels-photo-1291515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: -100px -100px;
 }
-
+ 
 .heading{
     text-align: center;
     color: rgb(218, 0, 0);
@@ -26,5 +26,28 @@
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 100px;
+}
+
+#history_bttn{
+    width: 114px;
+    height: 38px;
+    border-radius: 5px;
+    margin-top:6px;
+}
+
+
+.reset_bttn{
+    width: 114px;
+    height: 38px;
+    border-radius: 3px;
+    margin-top:6px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:visited{
+    color: white;
 }
 

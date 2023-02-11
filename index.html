@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/alarm+clock-1324760521977770776.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/alarm+clock-1324760521977770776.png"
+        type="image/x-icon">
 </head>
 
-<body>
+<body class="bg bg-secondary">
 
     <div class="screen">
         <div class="box">
@@ -22,10 +23,40 @@
                 <button class="btn btn-success w-30 increment" onclick="increment()">INCREMENT</button>
                 <button class="btn btn-danger w-30 increment" onclick="decrement()">DECREMENT</button>
                 <BR>
-                <button class="btn btn-primary mt-4 save" onclick="save()">Save</button>
+                <button class="btn btn-primary mt-2 save" onclick="save()">Save</button>
+                <br>
+            <button class="btn btn-secondary" id="history_bttn"><a href="#history_table" class="link">History</a></button>
+            <button class="btn btn-secondary reset_bttn" onclick="reset()">Reset</button>
             </div>
         </div>
     </div>
+
+    <br><br><br><br>
+    <table class="table table-dark table-striped" id="history_table">
+        <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Counts</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td id="count_took"></td>
+              <td id="note_wrote"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2"></td>
+            </tr>
+          </tbody>
+      </table>
 
 </body>
 
@@ -33,5 +64,7 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 
-    <script src="count.js"></script>
+<script src="count.js"></script>
+
 </html>
+
